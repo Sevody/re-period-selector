@@ -1,0 +1,100 @@
+
+
+.period-selector {
+    .period-selector-bar {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        background-color: #ffffff;
+        color: #555555;
+        font-size: 14px;
+        cursor: pointer;
+        font-weight: 700;
+        span {
+            float: left;
+        }
+        .period-selector-label{
+            padding-left: 2%;
+            width: 28%;
+            height: 100%;
+        }
+        .period-selector-value{
+            float: left;
+            width: 40%;
+        }
+        .period-selector-arrow {
+            float: right;
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i5Zu+5bGCXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIzOHB4IiB2aWV3Qm94PSIwIDAgMjAgMzgiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDM4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBmaWxsPSIjQjBCMEIwIiBkPSJNMTkuMjc4LDE5Ljc1MWMtMC40MTYsMC40MTUtMS4wODgsMC40MTUtMS41MDMsMEwwLjcyMiwyLjY5OGMtMC40MTQtMC40MTUtMC40MTQtMS4wODgsMC0xLjUwM2wwLDBjMC40MTYtMC40MTUsMS4wODgtMC40MTUsMS41MDMsMGwxNy4wNTQsMTcuMDU0QzE5LjY5MiwxOC42NjMsMTkuNjkyLDE5LjMzNiwxOS4yNzgsMTkuNzUxTDE5LjI3OCwxOS43NTF6Ii8+PHBhdGggZmlsbD0iI0IwQjBCMCIgZD0iTTAuNzIyLDM2LjgwNGMtMC40MTQtMC40MTQtMC40MTQtMS4wODcsMC0xLjUwMmwxNy4wNTQtMTcuMDUzYzAuNDE1LTAuNDE2LDEuMDg3LTAuNDE2LDEuNTAzLDBsMCwwYzAuNDE0LDAuNDE0LDAuNDE0LDEuMDg3LDAsMS41MDJMMi4yMjUsMzYuODA0QzEuODEsMzcuMjIsMS4xMzgsMzcuMjIsMC43MjIsMzYuODA0TDAuNzIyLDM2LjgwNHoiLz48L2c+PC9zdmc+);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 10px;
+            width: 50px;
+            height: 50px;
+            &:after {
+                content: ".";
+                height: 0;
+                visibility: hidden;
+                display: block;
+                clear: both;
+            }
+        }
+    }
+    .period-selector-menu {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 270px;
+        overflow: scroll;
+        z-index: 100;
+        background: white;
+        .period-selector-title {
+            height: 40px;
+            border-bottom: 1px solid #bebebe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .period-selector-period {
+                cursor: pointer;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+            }
+        }
+        .period-selector-options {
+            height: 199px;
+            margin: 15px 0px 15px 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            flex-flow: row wrap;
+            .period-selector-option {
+                width: 50px;
+                height: 22px;
+                margin-left: 5px;
+                margin-right: 5px;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                font-size: 15px;
+                color: #303030;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                cursor: pointer;
+            }
+            .period-selector-option:active {
+                background-color: #d9d9d9
+            }
+            .period-selector-option:hover {
+                background-color: #d9d9d9
+            }
+        }
+    }
+}
