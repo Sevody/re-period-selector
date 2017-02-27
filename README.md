@@ -1,6 +1,6 @@
 # re-period-selector
 
-a react compoent for period select
+a react compoent for period 
 
 ## Usage
 ```javascript
