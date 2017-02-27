@@ -41,7 +41,7 @@ const config = {
 // 开发环境配置
 if (!ISPROD) {
     config.entry = {
-        "basic": path.resolve(__dirname, 'example/basic.jsx'),
+        "basic": path.resolve(__dirname, 'examples/basic.jsx'),
     };
     config.output = {
         path: path.resolve(__dirname, 'dist'),
@@ -63,7 +63,7 @@ if (ISPROD) {
     config.entry = './index.js';
     config.output = {
         path: path.resolve(__dirname, 'dist'),
-        library: 're-periodSeletor',
+        library: 're-period-seletor',
         libraryTarget: 'umd',
         filename: 'index.js'
     };

@@ -1,5 +1,5 @@
 {
-  "name": "re-periodSeletor",
+  "name": "re-period-seletor",
   "version": "1.0.0",
   "description": "react period selector component",
   "main": "./dist/index.js",
